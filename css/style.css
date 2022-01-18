@@ -85,6 +85,10 @@ ul.top_menu {
   margin-left:20px;
   float: left;
   font-size: 1.5rem;
+
+}
+.content botton {
+    display:block;
 }
 .news{
   height: 200px;
@@ -103,12 +107,12 @@ ul.top_menu {
 .banner_content p img {
   width: 100%;
 }
-.side_menu .point{
+/*.side_menu .point{
   background-color: #FCECEC;
-}
-.side_menu .point a{
+}*/
+/*.side_menu .point a{
   color: #4D4D4D;
-}
+}*/
 .footer{
   width: 100%;
   height: 100px;

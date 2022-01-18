@@ -1,0 +1,38 @@
+.content{
+  background-color: white;
+}
+.side_menu .point a{
+  color: #4D4D4D;
+}
+table {
+  height: 7rem;
+}
+th {
+  weight: 150px​;
+  padding: 10px;
+  Text-align: right;
+}
+td {
+  weight: 480px​;
+  padding: 10px;
+}
+
+
+section input {
+  display: inline-block;
+  position: fixed;
+  bottom: 40px;
+  center: 0px;
+  background-color: #008B8B;
+  padding: 10px;
+  margin: 120px;
+  cursor: pointer; /*Pour faire sortir l'effet style au positionnement du curseur*/
+}
+input.submit{
+  color: white;
+  height: 3rem
+  text-align: center;
+}
+section input:hover {
+background-color: skyblue;
+}                  /*styler l'état de survol pour donnerun feedback visuel à l'utilisateur quand l'état du bouton change.
