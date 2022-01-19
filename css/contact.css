@@ -7,16 +7,58 @@
 table {
   height: 7rem;
 }
-th {
+table th {
   weight: 150px​;
   padding: 10px;
   Text-align: right;
 }
-td {
+table td {
   weight: 480px​;
   padding: 10px;
 }
 
+
+input[type="radio"].Sexe {
+  display: none;
+}
+input[type="radio"].Sexe + label {
+  position: relative;
+  padding-left: 1.3rem;
+}
+input[type="radio"].Sexe + label::before,
+input[type="radio"].Sexe + label::after {
+  display: block;
+  position: absolute;
+  box-sizing: border-box;
+  content:'';
+  border-radius: 1rem;
+}
+input[type="radio"].Sexe + label::before {
+  bottom: 0;
+  left: 0;
+  border: 1px solid #ccc;
+  background-color: #eee;
+  width: 1rem;
+  height: 1rem;
+}
+input[type="radio"].Sexe + label::after {
+  bottom: 3px;
+  left: 3px;
+  width: calc(1rem - 6px);
+  height: calc(1rem - 6px);
+}
+input[type="radio"].Sexe:checked + label::after {
+  background-color: #00B7E8;
+}
+
+
+nav ul li [class="point"].href{
+  background-color: #FCECEC;
+  color: #4D4D4D;
+}
+/*input[type="text"]{
+  text-align: right
+}*/
 
 section input {
   display: inline-block;
@@ -27,6 +69,11 @@ section input {
   padding: 10px;
   margin: 120px;
   cursor: pointer; /*Pour faire sortir l'effet style au positionnement du curseur*/
+}
+
+.bouton_connection
+{
+     text-align: left;
 }
 input.submit{
   color: white;
