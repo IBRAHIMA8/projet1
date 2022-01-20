@@ -8,15 +8,23 @@ table {
   height: 7rem;
 }
 table th {
-  weight: 150px​;
+  width: 150px​;
   padding: 10px;
   Text-align: right;
 }
 table td {
-  weight: 480px​;
+  width: 480px​;
   padding: 10px;
 }
 
+td input[type="Text"]{
+  width: 100%​;
+}
+
+
+/*textarea{
+  resize:none;
+}*/
 
 input[type="radio"].Sexe {
   display: none;
@@ -51,35 +59,55 @@ input[type="radio"].Sexe:checked + label::after {
   background-color: #00B7E8;
 }
 
+aside li:last-child {
+  background-color: #FCECEC;/* Pour mettre seule la dernière ligne celle de contact à une couleur donnée*/
+}
 
-nav ul li [class="point"].href{
+/*:nth-child(3){
+  background-color: #FCECEC;
+}*/
+/*nav ul li [class="point"].href{
   background-color: #FCECEC;
   color: #4D4D4D;
-}
+}*/
 /*input[type="text"]{
   text-align: right
 }*/
 
 section input {
   display: inline-block;
-  position: fixed;
-  bottom: 40px;
-  center: 0px;
+  /*position: top 10px , left: 10px​;*/
   background-color: #008B8B;
   padding: 10px;
-  margin: 120px;
+  margin: 10px;
   cursor: pointer; /*Pour faire sortir l'effet style au positionnement du curseur*/
 }
 
-.bouton_connection
-{
-     text-align: left;
-}
+/*input submit {
+  position: relative;
+  top: 10px;
+  left: 10px;
+}*/
 input.submit{
   color: white;
   height: 3rem
   text-align: center;
 }
+/*input.submit{
+  color: white;
+  height: 3rem
+  text-align: left;
+}*/
+article section{
+  position: center;
+}
+
+.bouton_connection{
+  text-align: center;
+}
+
+
+
 section input:hover {
 background-color: skyblue;
 }                  /*styler l'état de survol pour donnerun feedback visuel à l'utilisateur quand l'état du bouton change.
